@@ -1,13 +1,12 @@
-import java.time.LocalDate;
 
 public class Tarefa {
     private int ID;
     private String titulo;
     private String descricao;
-    private LocalDate dataVencimento;
+    private int dataVencimento;
     private Boolean status;
 
-    
+
     public int getID() {
         return ID;
     }
@@ -26,10 +25,10 @@ public class Tarefa {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    public LocalDate getDataVencimento() {
+    public int getDataVencimento() {
         return dataVencimento;
     }
-    public void setDataVencimento(LocalDate dataVencimento) {
+    public void setDataVencimento(int dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
     public Boolean getStatus() {
