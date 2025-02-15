@@ -1,4 +1,4 @@
-
+package br.com.models;
 public class Tarefa {
     private int ID;
     private String titulo;

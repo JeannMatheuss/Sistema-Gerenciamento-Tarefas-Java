@@ -1,3 +1,6 @@
+import br.com.models.Status;
+import br.com.models.Tarefa;
+
 public class Principal {
     public static void main(String[] args) {
         Tarefa tarefa = new Tarefa();
