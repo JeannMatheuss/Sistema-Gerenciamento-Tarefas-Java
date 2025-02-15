@@ -4,7 +4,7 @@ public class Tarefa {
     private String titulo;
     private String descricao;
     private int dataVencimento;
-    private Boolean status;
+    private Status status;
 
 
     public int getID() {
@@ -31,11 +31,11 @@ public class Tarefa {
     public void setDataVencimento(int dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
-    public Boolean getStatus() {
+    public Status getStatus() {
         return status;
     }
-    public void setStatus(Boolean status) {
-        this.status = status;
+    public void setStatus(Status concluida) {
+        this.status = concluida;
     }
 
     

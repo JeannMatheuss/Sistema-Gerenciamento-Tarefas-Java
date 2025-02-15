@@ -5,6 +5,6 @@ public class Principal {
         tarefa.setTitulo("Estudar something");
         tarefa.setDescricao("Estudar SpringBoot e Cloud");
         tarefa.setDataVencimento(2005-04-12);
-        tarefa.setStatus(true);
+        tarefa.setStatus(Status.CONCLUIDA);
     }
 }
