@@ -11,4 +11,9 @@ public class GerenciadorDeTarefas {
         this.listaDeTarefas = listaDeTarefas;
     }
 
+    public void adicionarTarefa() {
+        Tarefa novaTarefa = new Tarefa();
+        listaDeTarefas.add(novaTarefa);
+        System.out.println("✅ Tarefa adicionada com sucesso!");
+    }
 }
