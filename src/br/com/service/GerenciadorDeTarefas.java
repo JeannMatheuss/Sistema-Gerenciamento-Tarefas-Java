@@ -3,6 +3,8 @@ package br.com.service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.models.Status;
 import br.com.models.Tarefa;
 
 public class GerenciadorDeTarefas {
@@ -26,7 +28,16 @@ public class GerenciadorDeTarefas {
         return listaDeTarefas;
     }
 
-
+    public void atualizarStatus(int id, Status novoStatus) {
+        for (Tarefa tarefa : listaDeTarefas) {
+            if (tarefa.getId() == id) {
+                tarefa.setStatus(novoStatus);
+                System.out.println("✅ Status atualizado!");
+                return;
+            }
+        }
+        System.out.println("❌ Tarefa não encontrada.");
+    }
 
     public boolean removerTarefa(int id) {
         return listaDeTarefas.removeIf(tarefa -> tarefa.getId() == id);
