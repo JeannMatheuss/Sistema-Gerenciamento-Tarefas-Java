@@ -9,12 +9,12 @@ public class Tarefa {
     private LocalDate dataVencimento;
     private Status status;
 
-    // Construtor para inicializar os atributos
-    public Tarefa(int id, String titulo, String descricao, LocalDate dataVencimento) {
+    // Construtor para inicializar os atributos, ajuda a evitar ter que digitar um por um, chamando cada atributo por vez
+    public Tarefa(int id, String titulo, String descricao, LocalDate dataVencimento2) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.dataVencimento = dataVencimento;
+        this.dataVencimento = dataVencimento2;
         this.status = Status.PENDENTE; // Padrão ao criar uma nova tarefa
     }
 
@@ -63,11 +63,11 @@ public class Tarefa {
     @Override
     public String toString() {
         return "Tarefa { " +
-                "ID=" + id +
-                ", Título='" + titulo + '\'' +
-                ", Descrição='" + descricao + '\'' +
-                ", Data de Vencimento=" + dataVencimento +
-                ", Status=" + status +
+                "ID = " + id +
+                ", Título = '" + titulo + '\'' +
+                ", Descrição = '" + descricao + '\'' +
+                ", Data de Vencimento = " + dataVencimento +
+                ", Status = " + status +
                 " }";
     }
 }
