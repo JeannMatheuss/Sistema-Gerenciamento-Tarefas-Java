@@ -16,4 +16,8 @@ public class GerenciadorDeTarefas {
         listaDeTarefas.add(novaTarefa);
         System.out.println("✅ Tarefa adicionada com sucesso!");
     }
+
+    public List<Tarefa> listarTarefas() {
+        return listaDeTarefas;
+    }
 }
