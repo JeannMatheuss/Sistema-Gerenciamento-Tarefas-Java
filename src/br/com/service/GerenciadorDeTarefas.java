@@ -25,4 +25,10 @@ public class GerenciadorDeTarefas {
     public List<Tarefa> listarTarefas() {
         return listaDeTarefas;
     }
+
+
+
+    public boolean removerTarefa(int id) {
+        return listaDeTarefas.removeIf(tarefa -> tarefa.getId() == id);
+    }
 }
